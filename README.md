@@ -48,7 +48,7 @@ Si necesitas crear manualmente un usuario en la base de datos con una contraseñ
 ## Uso
 
 - Accede a [Swagger UI](http://localhost:8080/swagger-ui/index.html) para ver la documentación completa de la API.
-- Crea un usuario usando el endpoint `/api/v1/login` con una contraseña encriptada con bcrypt.
+- Login usando el endpoint `/api/v1/login` con la contraseña sin encriptar 123456,.
 
 Ejemplo de cuerpo de solicitud para crear usuario:
 ```json
