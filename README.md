@@ -7,10 +7,10 @@
    ```yml
       spring:
         datasource:
-         driver-class-name: com.mysql.cj.jdbc.Driver
-         url: jdbc:mysql://localhost/tyba
-         username: tu_usuario
-         password: tu_password
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://localhost/tyba
+          username: tu_usuario
+          password: tu_password
       jpa:
         show-sql: true
         properties:
