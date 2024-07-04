@@ -11,23 +11,22 @@
          url: jdbc:mysql://localhost/tyba
          username: tu_usuario
          password: tu_password
-   jpa:
-    show-sql: true
-    properties:
-      hibernate:
+      jpa:
+        show-sql: true
+        properties:
+        hibernate:
         format_sql: true
-   flyway:
-    enabled: true
-    url: jdbc:mysql://localhost/tyba
-    user: tu_usuario
-    password: tu_password
-    messages:
-    basename: ValidationDeMensajes
-
-   springdoc:
-     swagger-ui:
-     path: /swagger-ui.html
-     display-request-duration: true
+      flyway:
+        enabled: true
+        url: jdbc:mysql://localhost/tyba
+        user: tu_usuario
+        password: tu_password
+      messages:
+        basename: ValidationDeMensajes
+      springdoc:
+       swagger-ui:
+         path: /swagger-ui.html
+         display-request-duration: true
    ```
 4. Ejecuta la aplicación usando Spring Boot.
 
