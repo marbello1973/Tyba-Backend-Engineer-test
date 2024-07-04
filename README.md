@@ -16,6 +16,26 @@ Si necesitas crear manualmente un usuario en la base de datos con una contraseñ
    ```
 
 
+## Instalación API RESTful.
+
+1. Clona el repositorio.
+2. Configura tu base de datos MySQL en `application.yml`.
+3. Ejecuta la aplicación usando Spring Boot.
+
+## Uso
+
+- Accede a [Swagger UI](http://localhost:8080/swagger-ui/index.html) para ver la documentación completa de la API.
+- Crea un usuario usando el endpoint `/api/users` con una contraseña encriptada con bcrypt.
+
+Ejemplo de cuerpo de solicitud para crear usuario:
+```json
+{
+  "email": "usuario@example.com",
+  "password": "claveSegura123"
+}
+```
+
+
 
 ## Tecnologias
 * Spring Web WEB Build web, including RESTful, applications using Spring MVC. Uses Apache Tomcat as the default embedded container.
