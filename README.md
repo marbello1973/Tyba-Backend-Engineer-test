@@ -1,6 +1,36 @@
 ## Tyaba Back-End Enginner 
 
-## Creación Manual de Usuario en la Base de Datos
+## Creación Manual de Usuario en la Base de Datos e instalación API RESTful.
+
+1. Clona el repositorio.
+2. Configura tu base de datos MySQL en `application.yml`.
+   ````
+   spring:
+  profile.active: dev, test, prod
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost/tyba
+    username: root
+    password: 5610
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  flyway:
+    enabled: true
+    url: jdbc:mysql://localhost/tyba
+    user: root
+    password: 5610
+  messages:
+    basename: ValidationDeMensajes
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    display-request-duration: true
+   ```
+4. Ejecuta la aplicación usando Spring Boot.
 
 Si necesitas crear manualmente un usuario en la base de datos con una contraseña encriptada, sigue estos pasos:
 
@@ -15,12 +45,6 @@ Si necesitas crear manualmente un usuario en la base de datos con una contraseñ
    INSERT INTO users (email, password) VALUES ('usuario@example.com', '$2a$10$0gB3LgES0z3hS7lZol48A.V2vH7Z7UeYpPbz0B3PqufZM5/Ql9eNu');
    ```
 
-
-## Instalación API RESTful.
-
-1. Clona el repositorio.
-2. Configura tu base de datos MySQL en `application.yml`.
-3. Ejecuta la aplicación usando Spring Boot.
 
 ## Uso
 
