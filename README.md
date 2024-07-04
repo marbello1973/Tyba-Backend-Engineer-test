@@ -4,31 +4,30 @@
 
 1. Clona el repositorio.
 2. Configura tu base de datos MySQL en `application.yml`.
-   ````
-   spring:
-  profile.active: dev, test, prod
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost/tyba
-    username: root
-    password: 5610
-  jpa:
+   ```yml
+      spring:
+        datasource:
+         driver-class-name: com.mysql.cj.jdbc.Driver
+         url: jdbc:mysql://localhost/tyba
+         username: tu_usuario
+         password: tu_password
+   jpa:
     show-sql: true
     properties:
       hibernate:
         format_sql: true
-  flyway:
+   flyway:
     enabled: true
     url: jdbc:mysql://localhost/tyba
-    user: root
-    password: 5610
-  messages:
+    user: tu_usuario
+    password: tu_password
+    messages:
     basename: ValidationDeMensajes
 
-springdoc:
-  swagger-ui:
-    path: /swagger-ui.html
-    display-request-duration: true
+   springdoc:
+     swagger-ui:
+     path: /swagger-ui.html
+     display-request-duration: true
    ```
 4. Ejecuta la aplicación usando Spring Boot.
 
