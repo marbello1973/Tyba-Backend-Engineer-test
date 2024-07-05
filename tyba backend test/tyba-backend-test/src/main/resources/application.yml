@@ -1,0 +1,42 @@
+#spring.application.name=Foro-Hub-Api
+spring:
+  profile.active: dev, test, prod
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost/tyba
+    username: root
+    password: 5610
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  flyway:
+    enabled: true
+    url: jdbc:mysql://localhost/tyba
+    user: root
+    password: 5610
+  messages:
+    basename: ValidationDeMensajes
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    display-request-duration: true
+
+#logging:
+#  level:
+#    org:
+#      springframework: DEBUG
+
+server:
+  error:
+    include-stacktrace: never
+
+api:
+  services:
+    security:
+      secret: 123456 #${JWT_SECRET}
+
+locationiq:
+  api-key: pk.2d54f6cedad15cdac187f1a236b62f60
