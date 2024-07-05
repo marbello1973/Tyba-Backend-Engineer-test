@@ -56,4 +56,5 @@ Ejemplo de cuerpo de solicitud para crear usuario:
   "password": "claveSegura123"
 }
 ```
-##Swagger
+## Swagger 
+![Texto alternativo](C:\Users\david\Pictures\Screenshots/Captura.png)
