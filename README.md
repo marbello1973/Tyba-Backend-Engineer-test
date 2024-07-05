@@ -47,7 +47,7 @@
 ## Uso
 
 - Accede a [Swagger UI](http://localhost:8080/swagger-ui/index.html) para ver la documentación completa de la API.
-- Login usando el endpoint `/api/v1/login` con la contraseña sin encriptar 123456,.
+- Login usando el endpoint `/api/v1/login` con la contraseña sin encriptar claveSegura123,.
 
 Ejemplo de cuerpo de solicitud para crear usuario:
 ```json
