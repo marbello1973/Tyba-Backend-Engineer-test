@@ -39,7 +39,7 @@
    - Abre tu cliente de MySQL o el administrador de base de datos que prefieras.
    - Ejecuta la siguiente consulta SQL, reemplazando el email y la contraseña encriptada con los valores deseados:
    - Para interactuar con los endpoints, debes copiar el token generado con jwt en la pestaña de Authorization, seleccionas *_Bearer Token_*
-   - En caso de usar POSTMAN Authorization, seleccionas *_Bearer Token_*, puedes usar el de su eleccion 
+   - En caso de usar POSTMAN Authorization, seleccionas *_Bearer Token_*, pueden usar el de su eleccion 
 
    ```sql
    INSERT INTO users (email, password) VALUES ('usuario@example.com', '$2a$10$0gB3LgES0z3hS7lZol48A.V2vH7Z7UeYpPbz0B3PqufZM5/Ql9eNu');
