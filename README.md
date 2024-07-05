@@ -57,4 +57,4 @@ Ejemplo de cuerpo de solicitud para crear usuario:
 }
 ```
 ## Swagger 
-![Texto alternativo](C:\Users\david\Pictures\Screenshots/Captura.png)
+![Swagger](C:\Users\david\Pictures\Screenshots/Captura.png)
