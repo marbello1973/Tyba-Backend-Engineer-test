@@ -38,6 +38,7 @@
 2. **Inserta el Usuario en la Base de Datos:**
    - Abre tu cliente de MySQL o el administrador de base de datos que prefieras.
    - Ejecuta la siguiente consulta SQL, reemplazando el email y la contraseña encriptada con los valores deseados:
+   - Para interactuar con los endpoints, debes copiar el token generado con jwt en la pestaña de Authorization, seleccionas *_Bearer Token_*
 
    ```sql
    INSERT INTO users (email, password) VALUES ('usuario@example.com', '$2a$10$0gB3LgES0z3hS7lZol48A.V2vH7Z7UeYpPbz0B3PqufZM5/Ql9eNu');
@@ -56,5 +57,5 @@ Ejemplo de cuerpo de solicitud para crear usuario:
   "password": "claveSegura123"
 }
 ```
-## Swagger 
-![Swagger](C:\Users\david\Pictures\Screenshots/Captura.png)
+## Recomendacion usar swagger, validar el token   
+
