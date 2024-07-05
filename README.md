@@ -30,7 +30,7 @@
    ```
 4. Ejecuta la aplicación usando Spring Boot.
 
-Si necesitas crear manualmente un usuario en la base de datos con una contraseña encriptada, sigue estos pasos:
+   Si necesitas crear manualmente un usuario en la base de datos con una contraseña encriptada, sigue estos pasos:
 
 1. **Encripta la Contraseña con BCrypt:**
    - Utiliza [BCrypt Online Generator](https://www.bcrypt-generator.com/) u otra herramienta para encriptar la contraseña deseada. Copia el hash generado.
